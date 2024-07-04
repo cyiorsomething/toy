@@ -104,6 +104,7 @@ function init() {
 	addBelt([20, 10], [10,  6], 0.5, -3);
 	addBelt([10,  5], [ 5,  4], 0.5, -2);
 	addBelt([21, 22], [30, 11], 0.5, 6);
+	addBelt([ 0, 23], [ 3, 18], 0.5,  1);
 
 	state.props.forEach(function(prop) {
 		PropManager.init(prop, stage, phys2D, world);
