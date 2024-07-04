@@ -216,7 +216,7 @@ function addProp(propDef) {
 	state.props.push(prop);
 }
 var request = new XMLHttpRequest();
-request.open("GET", "characters.json");
+request.open("GET", "char.json");
 request.onload = function() {
 	PropManager.managers.simpleProp.propDefs = JSON.parse(request.responseText);
 
