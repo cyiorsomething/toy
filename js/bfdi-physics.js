@@ -97,13 +97,13 @@ function init() {
 		};
 		state.props.push(prop);
 	}
-	addBelt([ 0, 11], [ 7, 14], 0.5,  2);
-	addBelt([ 7, 14], [12, 12], 0.5,  2);
+	addBelt([ 0, 11], [ 7, 15], 0.5,  2);
+	addBelt([ 7, 14], [12, 13], 0.5,  4);
 	addBelt([12, 18], [20, 15], 0.5, 12);
-	addBelt([ 0, 22], [21, 22], 0.5,  2);
-	addBelt([20, 10], [10,  5], 0.5, -2);
-	addBelt([10,  5], [ 5,  5], 0.5, -2);
-	addBelt([21, 22], [30, 10], 0.5, 10);
+	addBelt([ 0, 19], [21, 25], 0.5,  3);
+	addBelt([20, 10], [10,  6], 0.5, -3);
+	addBelt([10,  5], [ 5,  4], 0.5, -2);
+	addBelt([21, 22], [30, 11], 0.5, 6);
 
 	state.props.forEach(function(prop) {
 		PropManager.init(prop, stage, phys2D, world);
